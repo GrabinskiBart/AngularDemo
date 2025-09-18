@@ -1,0 +1,98 @@
+<div class="about-container">
+  <div class="page-header">
+    <h1>About This Demo</h1>
+    <p>Learn more about the Angular demo project created for Softchoice</p>
+  </div>
+
+  <section class="project-overview">
+    <div class="overview-content">
+      <div class="overview-text">
+        <h2>Project Overview</h2>
+        <p>
+          This Angular demo application showcases modern web development practices and demonstrates
+          the power of Angular as a comprehensive framework for building scalable web applications.
+        </p>
+        <p>
+          Built specifically for Softchoice, this demo highlights key Angular features including
+          standalone components, reactive forms, routing, HTTP client integration, and modern
+          development tooling.
+        </p>
+        <div class="key-highlights">
+          <h3>Key Highlights</h3>
+          <ul>
+            <li>Modern Angular 18+ architecture with standalone components</li>
+            <li>Responsive design with mobile-first approach</li>
+            <li>TypeScript for enhanced developer experience</li>
+            <li>Comprehensive testing setup with Jasmine and Karma</li>
+            <li>Production-ready build configuration</li>
+            <li>Accessibility-focused implementation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats-panel">
+        <h3>Project Statistics</h3>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">{{ projectStats.linesOfCode }}</div>
+            <div class="stat-label">Lines of Code</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">{{ projectStats.components }}</div>
+            <div class="stat-label">Components</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">{{ projectStats.testCoverage }}</div>
+            <div class="stat-label">Test Coverage</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">{{ projectStats.buildTime }}</div>
+            <div class="stat-label">Build Time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="technologies">
+    <h2>Technologies Used</h2>
+    <div class="tech-grid">
+      <div class="tech-card" *ngFor="let tech of technologies">
+        <div class="tech-header">
+          <h3>{{ tech.name }}</h3>
+          <span class="version">{{ tech.version }}</span>
+        </div>
+        <p>{{ tech.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="team">
+    <h2>Acknowledgments</h2>
+    <div class="team-grid">
+      <div class="team-card" *ngFor="let member of teamMembers">
+        <div class="avatar">{{ member.avatar }}</div>
+        <h3>{{ member.name }}</h3>
+        <div class="role">{{ member.role }}</div>
+        <p>{{ member.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-content">
+      <h2>Get In Touch</h2>
+      <p>
+        Interested in learning more about Angular development or discussing your next project?
+        Softchoice is here to help you transform your digital initiatives.
+      </p>
+      <div class="contact-actions">
+        <a href="https://www.softchoice.com" target="_blank" class="btn btn-primary">
+          Visit Softchoice
+        </a>
+        <a href="https://angular.io" target="_blank" class="btn btn-secondary">
+          Learn Angular
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

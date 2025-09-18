@@ -1,0 +1,21 @@
+<div class="container">
+  <header class="header">
+    <div class="logo">
+      <h1>Angular Demo</h1>
+      <p class="subtitle">Demo for Softchoice</p>
+    </div>
+    <nav class="navigation">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a routerLink="/features" routerLinkActive="active">Features</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Softchoice Angular Demo. Built with Angular {{ angularVersion }}</p>
+  </footer>
+</div>

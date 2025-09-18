@@ -1,0 +1,44 @@
+<div class="home-container">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Angular Demo</h1>
+      <p class="hero-subtitle">
+        A comprehensive demonstration of Angular capabilities built specifically for Softchoice.
+        Explore modern web development with cutting-edge features and best practices.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" routerLink="/features">Explore Features</button>
+        <button class="btn btn-secondary" routerLink="/about">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-preview">
+    <div class="section-header">
+      <h2>Key Features</h2>
+      <p>Discover what makes this Angular demo special</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card" *ngFor="let feature of features">
+        <div class="feature-icon">{{ feature.icon }}</div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="section-header">
+      <h2>Project Statistics</h2>
+      <p>Performance metrics and project highlights</p>
+    </div>
+    
+    <div class="stats-grid">
+      <div class="stat-card" *ngFor="let stat of stats">
+        <div class="stat-value">{{ stat.value }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+    </div>
+  </section>
+</div>

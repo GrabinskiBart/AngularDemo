@@ -1,0 +1,323 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #718096;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.project-overview {
+  margin-bottom: 4rem;
+
+  .overview-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+
+    .overview-text {
+      h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        color: #4a5568;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+      }
+
+      .key-highlights {
+        margin-top: 2rem;
+
+        h3 {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: #2d3748;
+          margin-bottom: 1rem;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: #4a5568;
+            line-height: 1.5;
+
+            &::before {
+              content: '→';
+              position: absolute;
+              left: 0;
+              color: #667eea;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .stats-panel {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+
+        .stat-item {
+          text-align: center;
+
+          .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+          }
+
+          .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+.technologies {
+  margin-bottom: 4rem;
+
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+
+    .tech-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      border-left: 4px solid #667eea;
+
+      .tech-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.8rem;
+
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: #2d3748;
+          margin: 0;
+        }
+
+        .version {
+          background: #edf2f7;
+          color: #4a5568;
+          padding: 0.2rem 0.6rem;
+          border-radius: 12px;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+      }
+
+      p {
+        color: #718096;
+        margin: 0;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.team {
+  margin-bottom: 4rem;
+
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    .team-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      .avatar {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 0.5rem;
+      }
+
+      .role {
+        color: #667eea;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #718096;
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.contact {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 16px;
+  text-align: center;
+
+  .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+
+    .contact-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .btn {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-block;
+
+        &.btn-primary {
+          background-color: white;
+          color: #f5576c;
+
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+          }
+        }
+
+        &.btn-secondary {
+          background-color: transparent;
+          color: white;
+          border: 2px solid white;
+
+          &:hover {
+            background-color: white;
+            color: #f5576c;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-overview .overview-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    .stats-panel .stats-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
